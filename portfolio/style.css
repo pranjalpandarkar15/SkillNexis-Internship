@@ -1,0 +1,498 @@
+```css
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: white;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 70px;
+    padding: 0 5%;
+
+    background: #0d1726;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #9b6cff;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    padding: 25px 0;
+
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #9b6cff;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    min-height: 500px;
+
+    padding: 45px 5%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 65px;
+}
+
+.profile {
+    width: 50%;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 640px;
+    height: 365px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    display: block;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.hello {
+    color: #7956e8;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.about-content h1 {
+    font-size: 47px;
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+.about-content h2 {
+    color: #7956e8;
+
+    font-size: 21px;
+    font-weight: normal;
+
+    margin-bottom: 18px;
+}
+
+.line {
+    width: 55px;
+    height: 3px;
+
+    background: #7956e8;
+
+    margin-bottom: 22px;
+}
+
+.description {
+    color: #35415b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin-bottom: 12px;
+}
+
+.interests {
+    color: #35415b;
+
+    font-size: 15px;
+
+    margin-top: 15px;
+}
+
+.interests strong {
+    color: #7956e8;
+}
+
+.contact-btn {
+    display: inline-block;
+
+    margin-top: 23px;
+
+    padding: 12px 23px;
+
+    background: #7956e8;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #6340d0;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 38px 5%;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 29px;
+
+    margin-bottom: 8px;
+}
+
+.title-line {
+    width: 35px;
+    height: 3px;
+
+    background: #7956e8;
+
+    margin: 0 auto 28px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education {
+    background: #f7f6ff;
+}
+
+.education-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.education-card {
+    background: white;
+
+    width: 310px;
+
+    min-height: 105px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    border-radius: 9px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.education-icon {
+    width: 55px;
+    height: 55px;
+
+    background: #7956e8;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    flex-shrink: 0;
+}
+
+.education-card h3 {
+    color: #7956e8;
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+}
+
+.education-card p {
+    font-size: 14px;
+
+    margin-bottom: 2px;
+}
+
+.education-card span {
+    font-size: 14px;
+
+    color: #555;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills {
+    background: white;
+}
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 150px;
+    height: 65px;
+
+    border: 1px solid #ded9f5;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.skill i {
+    font-size: 25px;
+
+    color: #7956e8;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(121, 86, 232, 0.15);
+
+    border-color: #7956e8;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: #f7f6ff;
+}
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 260px;
+
+    min-height: 80px;
+
+    background: white;
+
+    padding: 17px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 8px;
+
+    background: #7956e8;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+}
+
+.contact-card h3 {
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+.contact-card p,
+.contact-card a {
+    font-size: 13px;
+
+    color: #555;
+
+    text-decoration: none;
+
+    word-break: break-word;
+}
+
+.contact-card a:hover {
+    color: #7956e8;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0d1726;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .about {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .profile,
+    .about-content {
+        width: 100%;
+    }
+
+    .profile img {
+        margin: auto;
+    }
+
+    .line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 0;
+
+        font-size: 14px;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+    }
+
+    .profile img {
+        height: 280px;
+    }
+
+    .education-card {
+        width: 100%;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+```
