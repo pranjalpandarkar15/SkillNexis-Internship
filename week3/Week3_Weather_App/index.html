@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <div class="weather-card">
+
+            <h1>Weather App</h1>
+
+            <p class="subtitle">
+                Check the weather in your city
+            </p>
+
+            <!-- Search Section -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+            <!-- Loading -->
+            <div id="loading" class="loading">
+                Loading...
+            </div>
+
+            <!-- Error Message -->
+            <p id="errorMessage" class="error-message"></p>
+
+            <!-- Weather Result -->
+            <div class="weather-result">
+
+                <h2 id="cityName">
+                    Your City
+                </h2>
+
+                <div class="weather-icon" id="weatherIcon">
+                    🌤️
+                </div>
+
+                <div class="temperature" id="temperature">
+                    --°C
+                </div>
+
+                <p class="condition" id="condition">
+                    Search for a city
+                </p>
+
+                <!-- Weather Details -->
+                <div class="weather-details">
+
+                    <div class="detail-box">
+
+                        <span>💧</span>
+
+                        <h3 id="humidity">
+                            --%
+                        </h3>
+
+                        <p>
+                            Humidity
+                        </p>
+
+                    </div>
+
+                    <div class="detail-box">
+
+                        <span>🌡️</span>
+
+                        <h3 id="feelsLike">
+                            --°C
+                        </h3>
+
+                        <p>
+                            Feels Like
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
